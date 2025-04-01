@@ -40,7 +40,6 @@ tests/specs/ide_settings_editor.spec
 tests/specs/ide_settings_terminal.spec
 tests/specs/ide_split_merge_panes.spec
 tests/specs/ide_switch_vms.spec
-tests/specs/ide_terminal.spec
 tests/specs/integrations.spec
 tests/specs/inviteAlreadyInvited_tryToLeaveTeamAsOnlyAdmin_MakeAdmin.spec
 tests/specs/inviteAsAdmin_convertToMember_inviteAlreadyMember.spec
