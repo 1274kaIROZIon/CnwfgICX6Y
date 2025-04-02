@@ -61,7 +61,6 @@ def search():
 		password = password.replace("\n","")
 		brute(password)
 
-		
 #welcome Hackers
 def welcome():
 	wel = """
