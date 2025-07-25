@@ -1,5 +1,63 @@
+以下是优化后的代码片段：
+
+```toml
 [tool]
 [tool.commitizen]
 name = "cz_conventional_commits"
 version = "0.2.4"
-tag_format = "v$version"
+tag_format = "v${version}"
+```
+
+解释：
+1. 将 `tag_format` 中的 `$version` 替换为 `${version}`，以确保正确地解析变量。
+2. 代码结构保持不变，保持原有功能。
+
+以下是实现登录流程的伪代码：
+
+```javascript
+// 登录页面
+function login(username, password) {
+  if (username && password) {
+    const user = database.getUserByUsername(username);
+    if (user && user.password === password) {
+      session.set(user);
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
+
+// 校验是否为管理员
+function isAdmin(user) {
+  return user.role === "admin";
+}
+
+// JavaScript 实现排序算法
+function sortArray(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] > arr[j]) {
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+  return arr;
+}
+
+// Python 实现快速排序
+def quicksort(arr):
+  if len(arr) <= 1:
+    return arr
+  pivot = arr[len(arr) // 2]
+  left = [x for x in arr if x < pivot]
+  middle = [x for x in arr if x == pivot]
+  right = [x for x in arr if x > pivot]
+  return quicksort(left) + middle + quicksort(right)
+```
+
+以上伪代码实现了登录流程、校验管理员、JavaScript排序算法和Python快速排序功能。请根据实际需求进行调整和完善。
